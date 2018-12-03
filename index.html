@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <title>Proyecto Herramientas Web</title>
+</head>
+
+<body>
+    <div class="fixed-header">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Herramientas Web</a>
+            </div>
+            <nav class="main-menu">
+                <ul>
+                    <li><a class="external" href="index.html">Inicio</a></li>
+                    <li><a class="external" href="tendencias.html">Tendencias</a></li>
+                    <li><a class="external" href="funcionalidades.html">Funcionalidades</a></li>
+                    <li><a class="external" href="https://www.facebook.com/FCCsecretariaacademica/?jazoest=2651001205378109859811
+                        595120491081186571561021    1811345835653114106797950761066712048491038310555761208675106101815865100
+                        1197212211351536812290116119545748891201148710770781208911289827554107707054791097456517569121675
+                        451103" target="_blank">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="col-md-12 content" id="home">
+           <div class="col-lg-6 col-md-6 content-item">
+               <img src="images/d.png" alt="Image" class="tm-image">
+           </div>
+           <div class="col-lg-6 col-md-6 content-item content-item-1 background">
+               <h2 class="main-title text-center dark-blue-text">Bienvendio a nuestra página</h2>
+               <p align="justify">En este proyecto final de la matera de Herramientas Web, hemos creado una página informativa 
+                   utilizando los conociemientos adquiridos durante el periodo de la respectiva materia</p>
+               <p align="justify">Aquí podrás adquirir información sobre las nuevas tendencias y novedades que se acercan al desarrollo web para este 2019</p>
+
+           </div>
+       </section>
+
+       <section class="col-md-12 content padding" id="services">
+        <div class="col-lg-6 col-md-6 col-md-push-6 content-item">
+           <img src="images/a.png" alt="Image" class="tm-image">
+       </div>
+       <div class="col-lg-6 col-md-6 col-md-pull-6 content-item background flexbox">
+           <h2 class="section-title">¿Qué es HTML?</h2>
+           <p class="section-text" align="justify">HTML es un lenguaje de programación que se utiliza para el desarrollo de páginas de Internet. Se trata de la siglas que corresponden 
+               a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto</p>
+       </div>
+
+   </section>
+
+   <section class="col-md-12 content" id="clients">
+       <div class="col-lg-6 col-md-6 content-item">
+           <img src="images/c.png" alt="Image" class="tm-image">
+       </div>
+       <div class="col-lg-6 col-md-6 content-item background flexbox">
+           <h2 class="section-title">¿Qué es CSS?</h2>
+
+           <p align="justify">
+                Por sus siglas en ingles Cascading Style Sheets, u Hojas de Estilo en Cascada es la tecnología
+                desarrollada por el World Wide Web Consortium (W3C) con el fin de separar la estructura de la presentación.
+           </p>
+           <p align="justify">
+               Básicamente lo que se hace con CSS es darle estilos a nuestra página ya maquetada de HTML
+           </p>
+
+       </div>
+   </section>
+
+   <section class="col-md-12 content padding" id="services">
+    <div class="col-lg-6 col-md-6 col-md-push-6 content-item">
+       <img src="images/b.png" alt="Image" class="tm-image">
+   </div>
+   <div class="col-lg-6 col-md-6 col-md-pull-6 content-item background flexbox">
+       <h2 class="section-title">¿Por que estudiar Desarrollo Web?</h2>
+       <p class="section-text" align="justify">La profesión del Diseñador Web es, al igual que todas las relacionadas con la tecnología y los nuevos medios de comunicación, una de las que comúnmente se llaman “del futuro”. 
+           Hoy, la mayoría de las empresas públicas y privadas tiene una página web, así como muchas personas tienen páginas personales y hay negocios montados completamente en Internet. 
+           Por ello son necesarias personas que las diseñen, confeccionen y mantengan de manera responsable y profesional.</p>
+   </div>
+
+</section>
+
+
+<footer class="col-md-12 content" id="externals">
+ <div class="col-lg-6 col-md-6 last">
+   <img src="images/5.png" alt="Image" class="tm-image">
+</div>
+<div class="col-lg-6 col-md-6 background last about-text-container">
+   <h2 class="section-title">Alumnos Equipo  </h2>
+   <p class="about-text">
+
+         Daniel Garnica Sáchez<br>
+         Sergio Fernandez Martinez <br>
+         Julio Roberto Lozano<br>
+
+   </p>
+</div>
+</footer>
+
+</div>
+
+<div class="text-center footer">
+	<div class="container">
+		Copyright @ Equipo Chido de Herramientas Web
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.singlePageNav.min.js"></script>
+<script>
+
+// Funcion Sticky Navbar
+function checkScrollPosition() {
+    if($(window).scrollTop() > 50) {
+      $(".fixed-header").addClass("scroll");
+  } else {
+      $(".fixed-header").removeClass("scroll");
+  }
+}
+
+$(document).ready(function () {
+    // Nav una pag
+    $('.fixed-header').singlePageNav({
+        offset: 59,
+        filter: ':not(.external)',
+        updateHash: true
+    });
+
+    checkScrollPosition();
+
+    // nav 
+    $('.navbar-toggle').click(function(){
+        $('.main-menu').toggleClass('show');
+    });
+
+    $('.main-menu a').click(function(){
+        $('.main-menu').removeClass('show');
+    });
+});
+
+$(window).on("scroll", function() {
+    checkScrollPosition();
+});
+</script>
+</body>
+</html>

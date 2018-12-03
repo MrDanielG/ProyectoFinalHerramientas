@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <title>Novedades</title>
+</head>
+
+<body>
+    <div class="fixed-header">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Herramientas Web</a>
+            </div>
+            <nav class="main-menu">
+                <ul>
+                        <li><a class="external" href="index.html">Inicio</a></li>
+                        <li><a class="external" href="tendencias.html">Tendencias</a></li>
+                        <li><a class="external" href="funcionalidades.html">Funcionalidades</a></li>
+                        <li><a class="external" href="https://www.facebook.com/FCCsecretariaacademica/?jazoest=2651001205378109859811
+                            5951204910811865715610211811345835653114106797950761066712048491038310555761208675106101815865100
+                            1197212211351536812290116119545748891201148710770781208911289827554107707054791097456517569121675
+                            451103" target="_blank">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="col-md-12 content" id="home">
+           <div class="col-lg-6 col-md-6 content-item">
+               <img src="images/h.png" alt="Image" class="tm-image">
+           </div>
+           <div class="col-lg-6 col-md-6 content-item content-item-1 background">
+               <h2 class="main-title text-center dark-blue-text">¿Qué es JavaScript?</h2>
+               <p align="justify">
+                    Javascript es un lenguaje de programación que surgió con el objetivo inicial de programar ciertos comportamientos sobre las páginas web, respondiendo a la interacción del usuario. Es un lenguaje de scripting del lado del cliente, sin embargo, hoy  es mucho más.
+               </p>
+
+               <p align="justify">
+                    Las necesidades de las aplicaciones web modernas y el HTML5 ha provocado que el uso de Javascript que encontramos hoy haya llegado a unos niveles de complejidad y prestaciones tan grandes como otros lenguajes de primer nivel.
+                 </p>
+           </div>
+       </section>
+
+       <section class="col-md-12 content padding" id="services">
+        <div class="col-lg-6 col-md-6 col-md-push-6 content-item">
+           <img src="images/i.png" alt="Image" class="tm-image">
+       </div>
+       <div class="col-lg-6 col-md-6 col-md-pull-6 content-item background flexbox">
+           <h2 class="section-title">React</h2>
+           <p align="justify" class="section-text">
+                React es una librería Javascript focalizada en el desarrollo de interfaces de usuario. Esa es su principal área de trabajo, pero lo cierto es que con todo el ecosistema de aplicaciones y herramientas y componentes, con React encontramos un excelente aliado para hacer todo tipo de aplicaciones web, SPA (Single Page Application) o incluso aplicaciones para móviles
+                <br><br>La popularidad de esta librería esta creciendo exponencialmente y se estima que sera la más usada para el 2019. Esto debido a su gran versatilidad así como sus ventajas conte su competidor: Angular
+            </p>
+
+       </div>
+
+   </section>
+
+   <section class="col-md-12 content" id="clients">
+       <div class="col-lg-6 col-md-6 content-item">
+           <img src="images/j.png" alt="Image" class="tm-image">
+       </div>
+       <div class="col-lg-6 col-md-6 content-item background flexbox">
+           <h2 class="section-title">Angular</h2>
+
+           <p align="justify" >
+                Angular es un framework de desarrollo para JavaScript creado por Google. La finalidad de Angular es facilitarnos el desarrollo de aplicaciones web SPA y además darnos herramientas para trabajar con los elementos de una web de una manera más sencilla y optima.
+                <br><br> Otro propósito que tiene Angular es la separación completa entre el front-end y el back-end en una aplicación web.
+           </p>
+
+       </div>
+   </section>
+
+
+<footer class="col-md-12 content" id="externals">
+ <div class="col-lg-6 col-md-6 last">
+   <img src="images/x.png" alt="Image" class="tm-image">
+</div>
+<div class="col-lg-6 col-md-6 background last about-text-container">
+   <h2 class="section-title">Alumnos Equipo</h2>
+  <p>
+        Daniel Garnica Sáchez<br>
+        Sergio Fernandez Martinez <br>
+        Julio Roberto Lozano<br>
+
+  </p>
+
+  </div>
+</footer>
+
+</div>
+
+<div class="text-center footer">
+	<div class="container">
+            Copyright @ Equipo Chido de Herramientas Web
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.singlePageNav.min.js"></script>
+
+<script>
+
+// Funcion Sticky Navbar
+function checkScrollPosition() {
+    if($(window).scrollTop() > 50) {
+      $(".fixed-header").addClass("scroll");
+  } else {
+      $(".fixed-header").removeClass("scroll");
+  }
+}
+
+$(document).ready(function () {
+    // Nav una pag
+    $('.fixed-header').singlePageNav({
+        offset: 59,
+        filter: ':not(.external)',
+        updateHash: true
+    });
+
+    checkScrollPosition();
+
+    // nav 
+    $('.navbar-toggle').click(function(){
+        $('.main-menu').toggleClass('show');
+    });
+
+    $('.main-menu a').click(function(){
+        $('.main-menu').removeClass('show');
+    });
+});
+
+$(window).on("scroll", function() {
+    checkScrollPosition();
+});
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <title>Tendencias</title>
+</head>
+
+<body>
+    <div class="fixed-header">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Herramientas Web</a>
+            </div>
+            <nav class="main-menu">
+                <ul>
+                        <li><a class="external" href="index.html">Inicio</a></li>
+                        <li><a class="external" href="tendencias.html">Tendencias</a></li>
+                        <li><a class="external" href="funcionalidades.html">Funcionalidades</a></li>
+                        <li><a class="external" href="https://www.facebook.com/FCCsecretariaacademica/?jazoest=2651001205378109859811
+                            5951204910811865715610211811345835653114106797950761066712048491038310555761208675106101815865100
+                            1197212211351536812290116119545748891201148710770781208911289827554107707054791097456517569121675
+                            451103" target="_blank">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="col-md-12 content" id="home">
+           <div class="col-lg-6 col-md-6 content-item">
+               <img src="images/e.png" alt="Image" class="tm-image">
+           </div>
+           <div class="col-lg-6 col-md-6 content-item content-item-1 background">
+               <h2 class="main-title text-center dark-blue-text">Tendencias en el desarrollo Web</h2>
+               <p align="center">
+                    Hemos llegado a finales del 2018 y qué mejor momento para hablar de las tendencias de diseño web que se van perfilando para el próximo año. <br><br>
+                     Si bien el diseño web puede ser un proceso creativo muy personal que depende de quién lo ejecute, 
+                    es normal  encontrarnos con tendencias que nos hagan tener una mejor experiencia al navegar por la red.
+               </p>
+           </div>
+       </section>
+
+       <section class="col-md-12 content padding" id="services">
+        <div class="col-lg-6 col-md-6 col-md-push-6 content-item">
+           <img src="images/f.png" alt="Image" class="tm-image">
+       </div>
+       <div class="col-lg-6 col-md-6 col-md-pull-6 content-item background flexbox">
+           <h2 class="section-title">Texturas</h2>
+           <p align="justify" class="section-text">
+                Así como los colores y los degradados las texturas se están posicionando como uno de los elementos favoritos de los diseñadores, ya sea en toda la pieza o incorporado a mediante a formas geométricas como parte de los elementos del diseño. <br><br>
+                 Mucho tiene que ver nuestra fiel relación con los smartphones y como estos han ido cambiando la manera en la que interactuamos con el mundo y el contenido, haciendo sus pantallas más grandes y más táctiles así como la creciente tendencia de producir contenido en donde se produzca placer al cortar, mover, o destruir cosas cuya textura casi podemos sentir en nuestras manos.    
+        </p>
+
+       </div>
+
+   </section>
+
+   <section class="col-md-12 content" id="clients">
+       <div class="col-lg-6 col-md-6 content-item">
+           <img src="images/g.png" alt="Image" class="tm-image">
+       </div>
+       <div class="col-lg-6 col-md-6 content-item background flexbox">
+           <h2 class="section-title">Tipografía </h2>
+
+           <p align="justify" >
+                Parte del porque la tipografía se esté convirtiendo en un elemento más importante en el diseño web es la “simpleza” que mencionábamos anteriormente. Una buena tipografía puede hacer más por tu sitio que algún otro elemento gráfico. <br><br>La tipografía es súper importante ya que de ella depende también si el contenido se consume o no, pues aunque muchos aún no lo entiendan más que verse bonita, su trabajo principal es el de cumplir con la creación de un mensaje y de que este se consuma,de nada nos sirve tener la más cara e increíble Font si no sirve para nuestros propósitos o si se convierte en un elemento molesto porque no está pensada para ser consumida y ser legible.
+             </p>
+
+       </div>
+   </section>
+
+
+<footer class="col-md-12 content" id="externals">
+ <div class="col-lg-6 col-md-6 last">
+   <img src="images/img1.jpg" alt="Image" class="tm-image">
+</div>
+<div class="col-lg-6 col-md-6 background last about-text-container">
+   <h2 class="section-title">Alumnos Equipo</h2>
+  <p>
+        Daniel Garnica Sáchez<br>
+        Sergio Fernandez Martinez <br>
+        Julio Roberto Lozano<br>
+
+  </p>
+
+
+
+  </div>
+</footer>
+
+</div>
+
+<div class="text-center footer">
+	<div class="container">
+            Copyright @ Equipo Chido de Herramientas Web
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.singlePageNav.min.js"></script>
+
+<script>
+
+// Funcion Sticky Navbar
+function checkScrollPosition() {
+    if($(window).scrollTop() > 50) {
+      $(".fixed-header").addClass("scroll");
+  } else {
+      $(".fixed-header").removeClass("scroll");
+  }
+}
+
+$(document).ready(function () {
+    // Nav una pag
+    $('.fixed-header').singlePageNav({
+        offset: 59,
+        filter: ':not(.external)',
+        updateHash: true
+    });
+
+    checkScrollPosition();
+
+    // nav 
+    $('.navbar-toggle').click(function(){
+        $('.main-menu').toggleClass('show');
+    });
+
+    $('.main-menu a').click(function(){
+        $('.main-menu').removeClass('show');
+    });
+});
+
+$(window).on("scroll", function() {
+    checkScrollPosition();
+});
+</script>
+</body>
+</html>
+
+
